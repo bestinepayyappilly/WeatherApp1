@@ -6,7 +6,6 @@ import {MaterialCommunityIcons} from '@expo/vector-icons';
 const Weather = () =>{
     return(
         <View style = {styles.weatherContainer}>
-        //css for header and body
             <View style = {styles.headerContainer}>
                 <MaterialCommunityIcons size ={48} name = "weather-sunny" color={'#fff'}/>
                 <Text style = {styles.tempText}>Temperature</Text>

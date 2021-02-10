@@ -49,7 +49,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
         {isLoading ? (
           <View style={styles.loadingContainer}>
-            <Text style={styles.loadingText}>Fetching The Weather</Text>
+           <Text>Fetching The Weather</Text>
           </View>
         ) : (
           <Weather weather={weatherCondition} temperature={temperature} />
@@ -69,8 +69,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#FFFDE4'
-  },
-  loadingText: {
-    fontSize: 30
   }
 });
