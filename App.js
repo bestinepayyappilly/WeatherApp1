@@ -37,7 +37,7 @@ export default class App extends React.Component {
         // console.log(json);
         this.setState({
           temperature: json.main.temp,
-          weatherCondition: json.weather.main,
+          weatherCondition: json.weather[0].main,
           isLoading: false
         });
       });
